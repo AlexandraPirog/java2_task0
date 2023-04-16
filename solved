@@ -1,0 +1,27 @@
+// Посчитайте сколько драгоценных камней в куче обычных камней
+// Пример:
+// jewels = “aB”, stones = “aaaAbbbB”
+// Результат в консоль ”a3B1”
+public  class program {
+    public static void main(String[] args) {
+
+        
+        String sample = "aaaAbbbB";
+        //String jewels ="aB";
+        char n = 'a';
+        char m = 'B';
+        int count = 0;
+        int count1 = 0;
+         for (int i = 0; i < sample.length(); i++) {
+            if(sample.charAt(i) == n){
+                count++;
+               }
+            if(sample.charAt(i) == m){
+                count1++;
+            }
+            }
+            System.out.println("a" +count+"B"+ count1);
+
+        
+    }
+}
